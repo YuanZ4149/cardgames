@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ride the Bus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Yuan's Card Games</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blackjack.html">Blackjack</a></li>
+        <li><a href="ridethebus.html">Ride the Bus</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Ride the Bus</h2>
+    <p>Try to predict the next card!</p>
+  </main>
+
+  <!-- Gameplay -->
+  <div id="game">
+
+    <div id="card-area">No cards drawn yet.</div>
+    <div id="message"></div>
+
+    <div class="buttons" id="buttons"></div>
+
+    <button class="gamebutton" onclick="restartGame()">Restart</button>
+
+  </div>
+
+  <script src="busscript.js"></script>
+
+</body>
+</html>

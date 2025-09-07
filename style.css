@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+nav {
+  background: #cecece;
+  color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+nav .container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #0a0a0a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0036b1;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Games */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.gamebutton {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#card-area {
+  margin-bottom: 20px;
+}

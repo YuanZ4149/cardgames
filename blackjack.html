@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Yuan's Card Games</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blackjack.html">Blackjack</a></li>
+        <li><a href="ridethebus.html">Ride the Bus</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Blackjack:</h2>
+    <p>Try to beat the dealer! The dealer stands on 17.</p>
+    <p>------------------------------------------------------------</p>
+  </main>
+
+  <!-- Gameplay -->
+  <div id="game">
+
+    <div id="dealer">
+      <h2>Dealer's Hand (<span id="dealer-score">0</span>)</h2>
+      <div id="dealer-cards" class="cards"></div>
+    </div>
+
+    <div id="player">
+      <h2>Your Hand (<span id="player-score">0</span>)</h2>
+      <div id="player-cards" class="cards"></div>
+    </div>
+
+    <div id="controls">
+      <button class="gamebutton" id="hit-btn">Hit</button>
+      <button class="gamebutton" id="stand-btn">Stand</button>
+      <button class="gamebutton" id="restart-btn" style="display: none;">Play Again</button>
+    </div>
+
+    <h2 id="message"></h2>
+  </div>
+
+  <script src="blackjackscript.js"></script>
+
+</body>
+</html>
